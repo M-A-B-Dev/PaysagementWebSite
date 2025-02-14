@@ -1,0 +1,70 @@
+.heightIMG {
+    height: 50rem;
+}
+.surface-ground {
+    padding: 2rem 1rem;
+
+    .card {
+        padding: 2rem;
+
+        h5 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .p-fluid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem; // Espacement entre les éléments
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            label {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            input,
+            textarea {
+                padding: 0.75rem;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 1rem;
+            }
+
+            &.col-12 {
+                width: 100%;
+            }
+
+            &.md\:col-6 {
+                width: 48%; // Pour les grands écrans
+            }
+
+            &.md\:col-3 {
+                width: 23%; // Pour les petits champs
+            }
+
+            .p-inputTextarea {
+                resize: vertical;
+                min-height: 120px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+    .heightIMG {
+        height: 45rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .heightIMG {
+        height: 30rem;
+        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%) !important;
+    }
+}
