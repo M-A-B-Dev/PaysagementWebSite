@@ -11,7 +11,7 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { DashboardsRoutingModule } from './dashboard-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormLayoutDemoModule } from '../uikit/formlayout/formlayoutdemo.module';
-
+import { MediaDemoModule } from '../uikit/media/mediademo.module';
 @NgModule({
     imports: [
         CommonModule,
@@ -25,6 +25,7 @@ import { FormLayoutDemoModule } from '../uikit/formlayout/formlayoutdemo.module'
         DashboardsRoutingModule,
         ReactiveFormsModule,
         FormLayoutDemoModule,
+        MediaDemoModule,
     ],
 
     declarations: [DashboardComponent],
