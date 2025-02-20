@@ -1,12 +1,4 @@
 <div class="layout-topbar">
-    <button
-        #menubutton
-        class="p-link layout-menu-button layout-topbar-button"
-        (click)="layoutService.onMenuToggle()"
-    >
-        <i class="pi pi-bars"></i>
-    </button>
-
     <a class="layout-topbar-logo" routerLink="">
         <img class="Logo" src="assets/layout/images/LogoSVG.svg" alt="Logo" />
     </a>
@@ -27,9 +19,18 @@
                 layoutService.state.profileSidebarVisible
         }"
     >
-        <button class="p-link layout-topbar-button" (click)="configButton()">
-            <i class="pi pi-cog"></i>
-            <span>Settings</span>
+        <button
+            #menubutton
+            class="p-link layout-menu-button layout-topbar-button"
+        >
+            <i class="pi pi-phone text-primary-500"></i>
+        </button>
+        <button
+            #menubutton
+            class="p-link layout-menu-button layout-topbar-button"
+            (click)="layoutService.onMenuToggle()"
+        >
+            <i class="pi pi-bars"></i>
         </button>
     </div>
 </div>
