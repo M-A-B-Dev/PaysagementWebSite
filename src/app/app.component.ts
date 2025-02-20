@@ -19,8 +19,8 @@ export class AppComponent implements OnInit {
             ripple: true,
             inputStyle: 'outlined',
             menuMode: 'static',
-            colorScheme: 'light',
-            theme: 'saga-green',
+            colorScheme: 'dark',
+            theme: 'vela-orange',
             scale: 14,
         };
         this.layoutService.config.set(config);
