@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
             inputStyle: 'outlined',
             menuMode: 'static',
             colorScheme: 'dark',
-            theme: 'vela-orange',
+            theme: 'arya-orange',
             scale: 14,
         };
         this.layoutService.config.set(config);

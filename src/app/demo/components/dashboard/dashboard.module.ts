@@ -12,6 +12,7 @@ import { DashboardsRoutingModule } from './dashboard-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormLayoutDemoModule } from '../uikit/formlayout/formlayoutdemo.module';
 import { MediaDemoModule } from '../uikit/media/mediademo.module';
+import { TimelineDemoModule } from '../pages/timeline/timelinedemo.module';
 @NgModule({
     imports: [
         CommonModule,
@@ -26,6 +27,7 @@ import { MediaDemoModule } from '../uikit/media/mediademo.module';
         ReactiveFormsModule,
         FormLayoutDemoModule,
         MediaDemoModule,
+        TimelineDemoModule,
     ],
 
     declarations: [DashboardComponent],
