@@ -89,16 +89,6 @@
     }
 }
 
-.conainer-info-title {
-    display: flex;
-
-    .title {
-        width: 50%;
-        margin: 10px;
-        font-weight: bold;
-    }
-}
-
 .container-info {
     h5 {
         margin-top: 1rem;
@@ -119,6 +109,13 @@
     .heightIMG {
         height: 45rem;
     }
+    .container-info {
+        .what-we-do {
+            p {
+                width: 15rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -133,6 +130,13 @@
 
             p {
                 font-size: 1.2em; // Adjust phrase font size for small screens
+            }
+        }
+    }
+    .container-info {
+        .what-we-do {
+            p {
+                width: 15rem;
             }
         }
     }
