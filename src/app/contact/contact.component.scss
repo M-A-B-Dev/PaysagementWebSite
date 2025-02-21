@@ -1,0 +1,52 @@
+// Welcome section container
+.heightIMG {
+    height: 45rem;
+}
+.Welcome {
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center; /* Centers children vertically */
+    align-items: center; /* Centers children horizontally */
+    height: 100vh; /* Makes the section take full viewport height */
+
+    // The image inside the Welcome section
+    .start-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Ensures the image covers the entire area without distortion
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; // Ensures the image stays behind the content
+    }
+
+    h1 {
+        text-align: center; /* Centers text horizontally within the elements */
+        margin: 0; /* Removes any default margin */
+    }
+}
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #383838;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+    .heightIMG {
+        height: 30rem;
+    }
+    .Welcome {
+        .start-content {
+            h1 {
+                font-size: 2em; // Adjust title font size for small screens
+            }
+
+            p {
+                font-size: 1.2em; // Adjust phrase font size for small screens
+            }
+        }
+    }
+}

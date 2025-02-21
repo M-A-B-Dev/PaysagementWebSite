@@ -1,7 +1,3 @@
-.heightIMG {
-    height: 45rem;
-}
-
 .about {
     margin: 3rem;
 }
@@ -61,6 +57,9 @@
 }
 
 // Welcome section container
+.heightIMG {
+    height: 45rem;
+}
 .Welcome {
     display: flex;
     flex-direction: column; /* Aligns children vertically */
