@@ -1,8 +1,9 @@
 <div class="col-12 surface-section">
     <form [formGroup]="contact" method="POST" (ngSubmit)="onSubmit()">
-        <h5 class="text-900 font-bold text-6xl mb-4 text-center">
-            Demande de Soumission
-        </h5>
+        <div class="mb-3 font-bold text-5xl text-center">
+            <span class="text-900">Demande de </span>
+            <span class="text-primary-500">soumission</span>
+        </div>
         <div class="p-fluid p-formgrid grid">
             <div class="field col-12 md:col-6">
                 <label htmlFor="nom">Nom</label>
@@ -60,13 +61,58 @@
                     formControlName="note"
                 ></textarea>
             </div>
-            <button
-                pButton
-                pRipple
-                label="Envoyer"
-                class="p-3 w-full"
-                type="submit"
-            ></button>
+
+            <div class="field col-12 md:col-12">
+                <p-button
+                    (onClick)="showDialog()"
+                    icon="pi pi-question-circle"
+                />
+
+                <p-dialog
+                    [modal]="true"
+                    [(visible)]="visible"
+                    [style]="{ width: '50rem' }"
+                    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+                >
+                    <!-- Utilisation d'un ng-template pour personnaliser l'en-tête -->
+                    <ng-template pTemplate="header">
+                        <div class="center-text mb-3 font-bold text-3xl">
+                            <span class="text-900"
+                                >Les étapes pour concrétiser
+                            </span>
+                            <span class="text-primary-500"
+                                >votre espace de rêve
+                            </span>
+                        </div>
+                    </ng-template>
+
+                    <!-- Contenu de la timeline -->
+                    <p-timeline [value]="events" align="alternate">
+                        <ng-template pTemplate="marker" let-event>
+                            <span
+                                class="flex z-1 w-2rem h-2rem align-items-center justify-content-center border-circle shadow-2"
+                                [style.backgroundColor]="event.color"
+                            >
+                                <p class="number-color">
+                                    {{ event.icon }}
+                                </p>
+                            </span>
+                        </ng-template>
+                        <ng-template pTemplate="content" let-event>
+                            {{ event.status }}
+                        </ng-template>
+                    </p-timeline>
+                </p-dialog>
+            </div>
+            <div class="field col-12 md:col-12">
+                <button
+                    pButton
+                    pRipple
+                    label="Envoyer"
+                    class="p-3 w-full"
+                    type="submit"
+                ></button>
+            </div>
         </div>
     </form>
 </div>

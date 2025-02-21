@@ -1,5 +1,9 @@
 .heightIMG {
-    height: 50rem;
+    height: 45rem;
+}
+
+.about {
+    margin: 3rem;
 }
 .surface-ground {
     padding: 2rem 1rem;
@@ -121,7 +125,6 @@
 @media (max-width: 600px) {
     .heightIMG {
         height: 30rem;
-        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%) !important;
     }
     .Welcome {
         .start-content {

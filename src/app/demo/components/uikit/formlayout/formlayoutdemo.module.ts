@@ -13,7 +13,8 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { DialogModule } from 'primeng/dialog';
+import { TimelineModule } from 'primeng/timeline';
 @NgModule({
     imports: [
         CommonModule,
@@ -30,6 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
         InputTextModule,
         ReactiveFormsModule,
         HttpClientModule,
+        DialogModule,
+        TimelineModule,
     ],
     declarations: [FormLayoutDemoComponent],
     exports: [FormLayoutDemoComponent],

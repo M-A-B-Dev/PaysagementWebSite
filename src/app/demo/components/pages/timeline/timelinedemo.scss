@@ -1,7 +1,13 @@
 .number-color {
     color: black;
 }
-
+::ng-deep {
+    .customized-timeline {
+        .p-card-content {
+            padding: 0;
+        }
+    }
+}
 @media screen and (max-width: 960px) {
     ::ng-deep {
         .customized-timeline {
@@ -15,14 +21,6 @@
 
             .p-timeline-event-opposite {
                 flex: 0;
-            }
-
-            .p-card {
-                margin-top: 1rem;
-
-                .p-card-content {
-                    padding: 0;
-                }
             }
         }
     }
