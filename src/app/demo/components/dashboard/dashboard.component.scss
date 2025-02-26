@@ -123,14 +123,12 @@
         height: 30rem;
     }
     .Welcome {
-        .start-content {
-            h1 {
-                font-size: 2em; // Adjust title font size for small screens
-            }
+        h1 {
+            font-size: 4em !important; // Adjust title font size for small screens
+        }
 
-            p {
-                font-size: 1.2em; // Adjust phrase font size for small screens
-            }
+        p {
+            font-size: 1.5em !important; // Adjust phrase font size for small screens
         }
     }
     .container-info {
@@ -138,6 +136,12 @@
             p {
                 width: 15rem;
             }
+        }
+    }
+
+    .about {
+        .mobile-padding {
+            padding: 1rem !important;
         }
     }
 }
