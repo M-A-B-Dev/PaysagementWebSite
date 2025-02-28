@@ -2,7 +2,6 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { NotfoundComponent } from './demo/components/notfound/notfound.component';
 import { AppLayoutComponent } from './layout/app.layout.component';
-import { ContactModule } from './contact/contact.module';
 
 @NgModule({
     imports: [
@@ -36,6 +35,7 @@ import { ContactModule } from './contact/contact.module';
                 scrollPositionRestoration: 'enabled',
                 anchorScrolling: 'enabled',
                 onSameUrlNavigation: 'reload',
+                useHash: false, // <-- Désactive le mode haché ici
             }
         ),
     ],
