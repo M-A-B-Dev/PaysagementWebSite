@@ -21,18 +21,13 @@ export class TimelineDemoComponent implements OnInit {
                 color: '#ffd54f',
             },
             {
-                status: 'Service professionnel et impeccable (clé en main, professionnel et impeccable)',
+                status: 'Service professionnel et impeccable ',
                 icon: '3',
                 color: '#ffd54f',
             },
             {
                 status: 'Garanties offertes',
                 icon: '4',
-                color: '#ffd54f',
-            },
-            {
-                status: 'Soumissions gratuite',
-                icon: '5',
                 color: '#ffd54f',
             },
         ];
