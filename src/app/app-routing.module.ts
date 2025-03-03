@@ -25,6 +25,20 @@ import { AppLayoutComponent } from './layout/app.layout.component';
                                     (m) => m.ContactModule
                                 ),
                         },
+                        {
+                            path: 'abris',
+                            loadChildren: () =>
+                                import('./abris/abris.module').then(
+                                    (m) => m.AbrisModule
+                                ),
+                        },
+                        {
+                            path: 'amenagement',
+                            loadChildren: () =>
+                                import('./amenagement/amenagement.module').then(
+                                    (m) => m.AmenagementModule
+                                ),
+                        },
                     ],
                 },
 
