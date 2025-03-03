@@ -23,11 +23,23 @@
                 layoutService.state.profileSidebarVisible
         }"
     >
-        <button
-            routerLink="contact"
-            class="p-link layout-menu-button layout-topbar-button"
-        >
-            <i class="pi pi-phone text-primary-500"></i>
-        </button>
+        <div class="btn-group">
+            <div class="layout-topbar-menu-content">
+                <a type="button" class="layout-topbar-action"> Calendar</a>
+                <a type="button" class="layout-topbar-action"> Messages </a>
+                <a
+                    routerLink="contact"
+                    type="button"
+                    class="layout-topbar-action"
+                >
+                    <i class="pi pi-phone text-primary-500"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
     </div>
+
+    <button #menubutton class="p-link layout-menu-button layout-topbar-button">
+        <i class="pi pi-bars"></i>
+    </button>
 </div>
