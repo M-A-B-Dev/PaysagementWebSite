@@ -1,1 +1,38 @@
-<p>amenagement works!</p>
+<section class="Welcome" id="mission">
+    <img
+        src="assets/layout/images/GestionRobex/Slogan-img.jpg"
+        alt="start-img"
+        class="start-img"
+    />
+    <div class="black-background">
+        <h1 class="test text-900 font-bold text-8xl mb-4 text-center">
+            Aménagement Paysager
+        </h1>
+    </div>
+
+    <!-- Conteneur des rectangles -->
+    <div class="menu-container">
+        <div
+            *ngFor="let item of menuItems"
+            [ngClass]="{ open: item.isOpen }"
+            class="menu-item"
+            (click)="toggleDropdown(item)"
+        >
+            <div class="menu-header">
+                <h2>{{ item.title }}</h2>
+                <!-- Icône de la flèche avec animation -->
+                <i
+                    class="pi pi-chevron-down text-yellow-500"
+                    [ngClass]="{
+                        'rotate-up': item.isOpen,
+                        'rotate-down': !item.isOpen
+                    }"
+                    style="cursor: pointer; font-size: 1.5rem"
+                ></i>
+            </div>
+            <div *ngIf="item.isOpen" class="menu-content">
+                <p>{{ item.content }}</p>
+            </div>
+        </div>
+    </div>
+</section>

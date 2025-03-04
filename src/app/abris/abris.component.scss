@@ -1,0 +1,98 @@
+.Welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+
+    .start-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .black-background {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px 20px;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+
+        h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; // Réduit l'espace entre les éléments
+        margin-top: 20px;
+        width: 100%;
+        max-width: 800px; // Limite la largeur
+        padding: 0 20px;
+    }
+
+    .menu-item {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60px; // Hauteur initiale du menu (réduit pour plus de compacité)
+    }
+
+    .menu-item.open {
+        height: 150px; // Hauteur du menu lorsqu'il est ouvert
+        padding: 12px 20px 15px 20px;
+        transition: height 0.5s ease-in-out, padding 0.3s ease;
+    }
+
+    .menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; // Centrer verticalement
+        width: 100%; // Occupe toute la largeur de l'élément
+
+        h2 {
+            margin: 0 0 0 1rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .menu-content {
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    // Animation de la flèche
+    .rotate-up {
+        transform: rotate(180deg); // Flèche qui pivote vers le haut
+        transition: transform 0.3s ease-in-out; // Applique une transition fluide
+    }
+
+    .rotate-down {
+        transform: rotate(0deg); // Flèche pointant vers le bas
+        transition: transform 0.3s ease-in-out; // Applique une transition fluide
+    }
+}
