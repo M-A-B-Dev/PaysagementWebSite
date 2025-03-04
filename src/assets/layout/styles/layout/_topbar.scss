@@ -26,45 +26,6 @@
         }
     }
 
-    .layout-topbar-button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        color: var(--text-color-secondary);
-        border-radius: 50%;
-        width: 3rem;
-        height: 3rem;
-        cursor: pointer;
-        transition: background-color $transitionDuration;
-        margin-right: 1.5rem;
-        &:hover {
-            color: var(--text-color);
-            background-color: var(--surface-hover);
-        }
-
-        &:focus {
-            @include focused();
-        }
-
-        i {
-            font-size: 1.5rem;
-        }
-
-        span {
-            font-size: 1rem;
-            display: none;
-        }
-    }
-
-    .layout-topbar-menu-button {
-        display: none;
-
-        i {
-            font-size: 1.25rem;
-        }
-    }
-
     .layout-topbar-menu {
         margin: 0 0 0 auto;
         padding: 0;
@@ -138,6 +99,47 @@
                 background-color: var(--primary-color);
                 color: white;
             }
+        }
+    }
+
+    /* === Desktop (larger than 1024px) === */
+    @media (min-width: 1024px) {
+        .layout-topbar-menu {
+            display: flex;
+        }
+
+        .layout-topbar-mobile-button {
+            display: none;
+        }
+    }
+
+    /* === Tablet and Small Desktop (768px to 1024px) === */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .layout-topbar-menu {
+            display: none; /* Cache le menu normal sur les tablettes */
+        }
+
+        .layout-topbar-mobile-button {
+            display: inline-flex; /* Affiche le bouton burger */
+            font-size: 2rem; /* Augmente la taille de l'icône burger */
+            margin-left: auto; /* Aligne le bouton à droite */
+            padding: 1rem; /* Ajoute du padding autour du bouton */
+            margin-right: 2rem; /* Ajoute de l'espace à droite pour qu'il ne touche pas le bord */
+        }
+    }
+
+    /* === Mobile === */
+    @media (max-width: 767px) {
+        .layout-topbar-menu {
+            display: none; /* Cache le menu normal sur mobile */
+        }
+
+        .layout-topbar-mobile-button {
+            display: inline-flex; /* Affiche le bouton burger */
+            font-size: 2rem; /* Augmente la taille de l'icône burger */
+            margin-left: auto; /* Aligne le bouton à droite */
+            padding: 1rem; /* Ajoute du padding autour du bouton */
+            margin-right: 2rem; /* Ajoute de l'espace à droite pour qu'il ne touche pas le bord */
         }
     }
 }

@@ -7,16 +7,8 @@
         />
     </a>
 
-    <button
-        #topbarmenubutton
-        class="p-link layout-topbar-menu-button layout-topbar-button"
-        (click)="layoutService.showProfileSidebar()"
-    >
-        <i class="pi pi-ellipsis-v"></i>
-    </button>
-
+    <!-- Menu Desktop -->
     <div
-        #topbarmenu
         class="layout-topbar-menu"
         [ngClass]="{
             'layout-topbar-menu-mobile-active':
@@ -25,36 +17,34 @@
     >
         <div class="btn-group">
             <div class="layout-topbar-menu-content">
-                <a routerLink="/" type="button" class="layout-topbar-action">
-                    À Propos</a
+                <a routerLink="/" type="button" class="layout-topbar-action"
+                    >À Propos</a
                 >
                 <a
                     routerLink="amenagement"
                     type="button"
                     class="layout-topbar-action"
+                    >Aménagement Paysager</a
                 >
-                    Aménagement Paysager</a
+                <a routerLink="abris" type="button" class="layout-topbar-action"
+                    >Abris Temporaire</a
                 >
-                <a
-                    routerLink="abris"
-                    type="button"
-                    class="layout-topbar-action"
-                >
-                    Abris Temporaire
-                </a>
                 <a
                     routerLink="contact"
                     type="button"
                     class="layout-topbar-action"
                 >
-                    <i class="pi pi-phone text-primary-500"></i>
-                    Contact
+                    <i class="pi pi-phone text-primary-500"></i> Contact
                 </a>
             </div>
         </div>
     </div>
 
-    <button #menubutton class="p-link layout-menu-button layout-topbar-button">
+    <!-- Menu Mobile (Hamburger) -->
+    <button
+        #menubutton
+        class="p-link layout-menu-button layout-topbar-button layout-topbar-mobile-button"
+    >
         <i class="pi pi-bars"></i>
     </button>
 </div>
