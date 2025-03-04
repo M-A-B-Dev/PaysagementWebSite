@@ -44,7 +44,28 @@
     <button
         #menubutton
         class="p-link layout-menu-button layout-topbar-button layout-topbar-mobile-button"
+        (click)="toggleSidebar()"
     >
         <i class="pi pi-bars"></i>
     </button>
+
+    <p-sidebar
+        [(visible)]="sidebarVisible"
+        position="left"
+        [baseZIndex]="10000"
+        [fullScreen]="true"
+    >
+        <div class="layout-topbar-menu-content">
+            <a routerLink="/" class="layout-topbar-action">À Propos</a>
+            <a routerLink="amenagement" class="layout-topbar-action"
+                >Aménagement Paysager</a
+            >
+            <a routerLink="abris" class="layout-topbar-action"
+                >Abris Temporaire</a
+            >
+            <a routerLink="contact" class="layout-topbar-action">
+                <i class="pi pi-phone text-primary-500"></i> Contact
+            </a>
+        </div>
+    </p-sidebar>
 </div>

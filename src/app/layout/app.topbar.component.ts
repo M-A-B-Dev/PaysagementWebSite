@@ -16,7 +16,12 @@ export class AppTopBarComponent {
     @ViewChild('topbarmenu') menu!: ElementRef;
 
     constructor(public layoutService: LayoutService) {}
+    sidebarVisible: boolean = false;
 
+    // Fonction pour basculer la visibilité du menu latéral
+    toggleSidebar() {
+        this.sidebarVisible = !this.sidebarVisible;
+    }
     configButton() {
         this.layoutService.showConfigSidebar();
     }
