@@ -123,8 +123,11 @@
             display: inline-flex; /* Affiche le bouton burger */
             font-size: 2rem; /* Augmente la taille de l'icône burger */
             margin-left: auto; /* Aligne le bouton à droite */
-            padding: 1rem; /* Ajoute du padding autour du bouton */
-            margin-right: 2rem; /* Ajoute de l'espace à droite pour qu'il ne touche pas le bord */
+            i {
+                font-size: 2rem; /* Augmente la taille de l'icône burger */
+                color: yellow;
+                padding: 0.5rem;
+            }
         }
     }
 
@@ -136,10 +139,13 @@
 
         .layout-topbar-mobile-button {
             display: inline-flex; /* Affiche le bouton burger */
-            font-size: 2rem; /* Augmente la taille de l'icône burger */
             margin-left: auto; /* Aligne le bouton à droite */
-            padding: 1rem; /* Ajoute du padding autour du bouton */
-            margin-right: 2rem; /* Ajoute de l'espace à droite pour qu'il ne touche pas le bord */
+            justify-content: center;
+            i {
+                font-size: 2rem; /* Augmente la taille de l'icône burger */
+                color: yellow;
+                padding: 0.5rem;
+            }
         }
     }
 }
