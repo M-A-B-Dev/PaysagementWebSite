@@ -203,3 +203,23 @@
         color: white;
     }
 }
+.sidebar-container {
+    .layout-topbar-logo-mobile {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 10rem;
+            padding: 0.5rem;
+        }
+    }
+
+    .menu-footer {
+        margin-top: 2rem;
+        .icons-group {
+            gap: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

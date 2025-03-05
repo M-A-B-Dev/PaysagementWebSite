@@ -55,33 +55,93 @@
         [baseZIndex]="10000"
         [fullScreen]="true"
     >
-        <div class="container-mobil-menu">
-            <div class="layout-topbar-menu-content-mobil">
-                <a
-                    routerLink="/"
-                    class="layout-topbar-action-mobil"
-                    (click)="closeSidebarWithDelay()"
-                    >À Propos</a
-                >
-                <a
-                    routerLink="amenagement"
-                    class="layout-topbar-action-mobil"
-                    (click)="closeSidebarWithDelay()"
-                    >Aménagement Paysager</a
-                >
-                <a
-                    routerLink="abris"
-                    class="layout-topbar-action-mobil"
-                    (click)="closeSidebarWithDelay()"
-                    >Abris Temporaire</a
-                >
-                <a
-                    routerLink="contact"
-                    class="layout-topbar-action-mobil"
-                    (click)="closeSidebarWithDelay()"
-                >
-                    <i class="pi pi-phone text-primary-500"></i> Contact
+        <div class="sidebar-container">
+            <div class="logo-mobil-menu">
+                <a class="layout-topbar-logo-mobile" routerLink="">
+                    <img
+                        class="Logo"
+                        src="assets/layout/images/Logo-Gestion-Robex-v4.png"
+                        alt="Logo"
+                    />
                 </a>
+            </div>
+            <div class="container-mobil-menu">
+                <div class="layout-topbar-menu-content-mobil">
+                    <a
+                        routerLink="/"
+                        class="layout-topbar-action-mobil"
+                        (click)="closeSidebarWithDelay()"
+                        >À Propos</a
+                    >
+                    <a
+                        routerLink="amenagement"
+                        class="layout-topbar-action-mobil"
+                        (click)="closeSidebarWithDelay()"
+                        >Aménagement Paysager</a
+                    >
+                    <a
+                        routerLink="abris"
+                        class="layout-topbar-action-mobil"
+                        (click)="closeSidebarWithDelay()"
+                        >Abris Temporaire</a
+                    >
+                    <a
+                        routerLink="contact"
+                        class="layout-topbar-action-mobil"
+                        (click)="closeSidebarWithDelay()"
+                    >
+                        <i class="pi pi-phone text-primary-500"></i> Contact
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-footer">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Section Contact Us -->
+                    <div
+                        class="text-center w-full md:w-6/12 flex-col items-center justify-center py-5"
+                    >
+                        <h3 class="text-lg font-bold">Nous Contacter</h3>
+                        <p>
+                            Téléphone <a href="tel:+514-555-xxx">514-555-xxx</a>
+                        </p>
+                        <p>
+                            Email:
+                            <a href="mailto:contact@votre-domaine.com"
+                                >contact-domaine.com</a
+                            >
+                        </p>
+                    </div>
+
+                    <div>
+                        <p-divider layout="vertical" class="!hidden md:!flex"
+                            ><b></b
+                        ></p-divider>
+                    </div>
+
+                    <!-- Section Nos Fournisseurs -->
+                    <div
+                        class="text-center w-full md:w-6/12 flex-col items-center justify-center py-5"
+                    >
+                        <h3 class="text-lg font-bold">
+                            Suivez- nous sur les réseaux sociaux
+                        </h3>
+                        <div class="icons-group">
+                            <a href="https://www.instagram.com" target="_blank"
+                                ><i
+                                    class="pi pi-instagram"
+                                    style="font-size: 2rem"
+                                ></i
+                            ></a>
+                            <a href="https://www.facebook.com" target="_blank"
+                                ><i
+                                    class="pi pi-facebook"
+                                    style="font-size: 2rem"
+                                ></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </p-sidebar>
