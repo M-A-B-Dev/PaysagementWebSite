@@ -51,7 +51,18 @@
                 />
             </div>
             <div class="field col-12 md:col-12">
-                <label htmlFor="note">Note</label>
+                <label htmlFor="phone">Numéro téléphone</label>
+                <input
+                    formControlName="phone"
+                    name="phone"
+                    pInputText
+                    id="phone"
+                    type="text"
+                    required
+                />
+            </div>
+            <div class="field col-12 md:col-12">
+                <label htmlFor="note">Détails</label>
                 <textarea
                     id="note"
                     type="text"
@@ -62,48 +73,6 @@
                 ></textarea>
             </div>
 
-            <div class="field col-12 md:col-12">
-                <p-button
-                    (onClick)="showDialog()"
-                    icon="pi pi-question-circle"
-                />
-
-                <p-dialog
-                    [modal]="true"
-                    [(visible)]="visible"
-                    [style]="{ width: '50rem' }"
-                    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
-                >
-                    <!-- Utilisation d'un ng-template pour personnaliser l'en-tête -->
-                    <ng-template pTemplate="header">
-                        <div class="center-text mb-3 font-bold text-3xl">
-                            <span class="text-900"
-                                >Les étapes pour concrétiser
-                            </span>
-                            <span class="text-primary-500"
-                                >votre espace de rêve
-                            </span>
-                        </div>
-                    </ng-template>
-
-                    <!-- Contenu de la timeline -->
-                    <p-timeline [value]="events" align="alternate">
-                        <ng-template pTemplate="marker" let-event>
-                            <span
-                                class="flex z-1 w-2rem h-2rem align-items-center justify-content-center border-circle shadow-2"
-                                [style.backgroundColor]="event.color"
-                            >
-                                <p class="number-color">
-                                    {{ event.icon }}
-                                </p>
-                            </span>
-                        </ng-template>
-                        <ng-template pTemplate="content" let-event>
-                            {{ event.status }}
-                        </ng-template>
-                    </p-timeline>
-                </p-dialog>
-            </div>
             <div class="field col-12 md:col-12">
                 <button
                     pButton
