@@ -55,17 +55,34 @@
         [baseZIndex]="10000"
         [fullScreen]="true"
     >
-        <div class="layout-topbar-menu-content">
-            <a routerLink="/" class="layout-topbar-action">À Propos</a>
-            <a routerLink="amenagement" class="layout-topbar-action"
-                >Aménagement Paysager</a
-            >
-            <a routerLink="abris" class="layout-topbar-action"
-                >Abris Temporaire</a
-            >
-            <a routerLink="contact" class="layout-topbar-action">
-                <i class="pi pi-phone text-primary-500"></i> Contact
-            </a>
+        <div class="container-mobil-menu">
+            <div class="layout-topbar-menu-content-mobil">
+                <a
+                    routerLink="/"
+                    class="layout-topbar-action-mobil"
+                    (click)="closeSidebarWithDelay()"
+                    >À Propos</a
+                >
+                <a
+                    routerLink="amenagement"
+                    class="layout-topbar-action-mobil"
+                    (click)="closeSidebarWithDelay()"
+                    >Aménagement Paysager</a
+                >
+                <a
+                    routerLink="abris"
+                    class="layout-topbar-action-mobil"
+                    (click)="closeSidebarWithDelay()"
+                    >Abris Temporaire</a
+                >
+                <a
+                    routerLink="contact"
+                    class="layout-topbar-action-mobil"
+                    (click)="closeSidebarWithDelay()"
+                >
+                    <i class="pi pi-phone text-primary-500"></i> Contact
+                </a>
+            </div>
         </div>
     </p-sidebar>
 </div>
