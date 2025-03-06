@@ -13,22 +13,22 @@ export class TimelineDemoComponent implements OnInit {
             {
                 status: 'Solidité et durabilité',
                 icon: '1',
-                color: '#ffd54f',
+                color: '#FCC11D',
             },
             {
                 status: 'Respect des normes et standards les plus élevés de l’industrie',
                 icon: '2',
-                color: '#ffd54f',
+                color: '#FCC11D',
             },
             {
                 status: 'Service professionnel et impeccable ',
                 icon: '3',
-                color: '#ffd54f',
+                color: '#FCC11D',
             },
             {
                 status: 'Garanties offertes',
                 icon: '4',
-                color: '#ffd54f',
+                color: '#FCC11D',
             },
         ];
     }
