@@ -41,62 +41,88 @@
         width: 100%;
         max-width: 800px; // Limite la largeur
         padding: 0 20px;
-    }
-
-    .menu-item {
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 12px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        color: #fff;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 60px; // Hauteur initiale du menu (réduit pour plus de compacité)
-    }
-
-    .menu-item.open {
-        height: 150px; // Hauteur du menu lorsqu'il est ouvert
-        padding: 12px 20px 15px 20px;
-        transition: height 0.5s ease-in-out, padding 0.3s ease;
-    }
-
-    .menu-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; // Centrer verticalement
-        width: 100%; // Occupe toute la largeur de l'élément
-
-        h2 {
-            margin: 0 0 0 1rem;
-            font-size: 1.6rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+        .menu-item {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #fff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 60px; // Hauteur initiale du menu (réduit pour plus de compacité)
         }
 
-        i {
-            color: #fcc11d;
+        .menu-item.open {
+            height: 150px; // Hauteur du menu lorsqu'il est ouvert
+            padding: 12px 20px 15px 20px;
+            transition: height 0.5s ease-in-out, padding 0.3s ease;
+        }
+
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; // Centrer verticalement
+            width: 100%; // Occupe toute la largeur de l'élément
+
+            h2 {
+                margin: 0 0 0 1rem;
+                font-size: 1.6rem;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
+
+            i {
+                color: #fcc11d;
+            }
+        }
+
+        .menu-content {
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        // Animation de la flèche
+        .rotate-up {
+            transform: rotate(180deg); // Flèche qui pivote vers le haut
+            transition: transform 0.3s ease-in-out; // Applique une transition fluide
+        }
+
+        .rotate-down {
+            transform: rotate(0deg); // Flèche pointant vers le bas
+            transition: transform 0.3s ease-in-out; // Applique une transition fluide
         }
     }
+}
 
-    .menu-content {
-        margin-top: 10px;
-        padding: 15px;
-        border-radius: 5px;
-        color: #fff;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+}
 
-    // Animation de la flèche
-    .rotate-up {
-        transform: rotate(180deg); // Flèche qui pivote vers le haut
-        transition: transform 0.3s ease-in-out; // Applique une transition fluide
-    }
+@media (max-width: 768px) {
+    .Welcome {
+        .black-background {
+            padding: 10px 10px;
+            h1 {
+                font-size: 3rem !important;
+                margin: 0 !important;
+            }
+        }
 
-    .rotate-down {
-        transform: rotate(0deg); // Flèche pointant vers le bas
-        transition: transform 0.3s ease-in-out; // Applique une transition fluide
+        .menu-container {
+            .menu-item.open {
+                height: 200px;
+            }
+
+            .menu-header {
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }
