@@ -100,3 +100,29 @@
         transition: transform 0.3s ease-in-out; // Applique une transition fluide
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .Welcome {
+        .black-background {
+            padding: 10px 10px;
+            h1 {
+                font-size: 3rem !important;
+                margin: 0 !important;
+            }
+        }
+
+        .menu-container {
+            .menu-item.open {
+                height: 200px;
+            }
+
+            .menu-header {
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
