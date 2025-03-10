@@ -114,8 +114,12 @@
         }
 
         .menu-container {
+            gap: 10px;
+            margin-top: 15px;
+            max-width: 500px;
+            padding: 0;
             .menu-item.open {
-                height: 200px;
+                height: 250px;
             }
 
             .menu-header {
@@ -123,6 +127,9 @@
                     font-size: 1.2rem;
                 }
             }
+        }
+        .menu-content {
+            padding: 5px 5px 5px 0px;
         }
     }
 }

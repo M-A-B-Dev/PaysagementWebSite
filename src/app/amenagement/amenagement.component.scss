@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
 
     .start-img {
@@ -59,7 +59,7 @@
     }
 
     .menu-item.open {
-        height: 150px; // Hauteur du menu lorsqu'il est ouvert
+        height: 200px; // Hauteur du menu lorsqu'il est ouvert
         padding: 12px 20px 15px 20px;
         transition: height 0.5s ease-in-out, padding 0.3s ease;
     }
@@ -114,15 +114,23 @@
         }
 
         .menu-container {
+            gap: 10px;
+            margin-top: 15px;
+            max-width: 500px;
+            padding: 0;
             .menu-item.open {
-                height: 200px;
+                height: 250px;
             }
 
             .menu-header {
                 h2 {
                     font-size: 1.2rem;
+                    margin: 0 0 0 0;
                 }
             }
+        }
+        .menu-content {
+            padding: 5px 5px 5px 0px;
         }
     }
 }
