@@ -8,9 +8,13 @@
             .p-card-content {
                 padding: 0;
             }
+            .p-component {
+                font-family: "Archive", sans-serif !important;
+            }
         }
     }
 }
+
 @media screen and (max-width: 960px) {
     ::ng-deep {
         .customized-timeline {

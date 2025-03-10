@@ -19,10 +19,16 @@
         left: 0;
         z-index: -1; // Ensures the image stays behind the content
     }
-
-    h1 {
-        text-align: center; /* Centers text horizontally within the elements */
-        margin: 0; /* Removes any default margin */
+    .black-background {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        h1 {
+            margin: 0;
+        }
     }
 }
 

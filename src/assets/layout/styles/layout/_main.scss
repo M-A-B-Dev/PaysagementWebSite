@@ -8,9 +8,13 @@ html {
 }
 
 body {
-    p {
+    p,
+    label,
+    button,
+    a {
         font-family: "Archive", sans-serif !important;
     }
+
     h1,
     h2,
     h3,

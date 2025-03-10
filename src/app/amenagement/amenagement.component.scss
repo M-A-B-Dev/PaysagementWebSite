@@ -118,32 +118,32 @@
     }
 }
 
-// @media (min-width: 769px) and (max-width: 1024px) {
-//     .Welcome {
-//         .black-background {
-//             h1 {
-//                 font-size: 3rem !important;
-//             }
-//         }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Welcome {
+        .black-background {
+            h1 {
+                font-size: 5rem !important;
+            }
+        }
 
-//         .menu-container {
-//             gap: 15px;
-//             margin-top: 20px;
-//             max-width: 700px;
-//             padding: 0 20px;
-//         }
+        .menu-container {
+            gap: 15px;
+            margin-top: 20px;
+            max-width: 700px;
+            padding: 0 20px;
+        }
 
-//         .menu-item.open {
-//             height: 220px;
-//         }
+        .menu-item.open {
+            height: 220px;
+        }
 
-//         .menu-header {
-//             h2 {
-//                 font-size: 1.4rem;
-//             }
-//         }
-//     }
-// }
+        .menu-header {
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
 
 @media (max-width: 768px) {
     .Welcome {
