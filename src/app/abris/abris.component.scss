@@ -109,6 +109,9 @@
         padding: 15px;
         border-radius: 5px;
         color: #fff;
+        .custom-size {
+            font-size: 1.1rem;
+        }
     }
 
     /* Animation de la flèche */
@@ -148,6 +151,11 @@
             }
         }
     }
+    .menu-content {
+        .custom-size {
+            font-size: 0.9rem !important;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -178,6 +186,11 @@
 
         .menu-content {
             padding: 5px 5px 5px 0px;
+        }
+    }
+    .menu-content {
+        .custom-size {
+            font-size: 0.9rem !important;
         }
     }
 }

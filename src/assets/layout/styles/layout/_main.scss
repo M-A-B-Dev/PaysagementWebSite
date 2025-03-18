@@ -13,6 +13,8 @@ body {
     button,
     a {
         font-family: "Archive", sans-serif !important;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
     }
 
     h1,
@@ -22,6 +24,7 @@ body {
     h5,
     h6 {
         font-family: "Bebas", sans-serif !important;
+        letter-spacing: 2px;
     }
 
     color: var(--text-color);
@@ -40,4 +43,35 @@ a {
 
 .layout-wrapper {
     min-height: 100vh;
+}
+/* Tablet screens (600px to 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+    body {
+        p,
+        label,
+        button,
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+/* Mobile screens (below 600px) */
+@media (max-width: 600px) {
+    body {
+        p,
+        label,
+        button,
+        a {
+            font-size: 1rem;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 1.5rem;
+        }
+    }
 }

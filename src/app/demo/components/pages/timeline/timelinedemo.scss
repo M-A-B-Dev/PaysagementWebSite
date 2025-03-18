@@ -18,6 +18,9 @@
 @media screen and (max-width: 960px) {
     ::ng-deep {
         .customized-timeline {
+            .p-card-title {
+                font-size: 1rem;
+            }
             .p-timeline-event:nth-child(even) {
                 flex-direction: row !important;
 

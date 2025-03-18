@@ -44,7 +44,7 @@ export class FormLayoutDemoComponent implements OnInit {
             email: ['', [Validators.required, Validators.email]],
             ville: ['', Validators.required],
             phone: ['', Validators.required],
-            note: [''],
+            details: [''],
         });
     }
 }

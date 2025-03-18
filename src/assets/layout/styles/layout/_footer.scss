@@ -1,5 +1,9 @@
 .layout-footer {
     footer {
+        .footer-position {
+            display: flex;
+            flex-direction: row;
+        }
         margin-top: 2rem;
         text-align: center;
         ul {
@@ -19,6 +23,14 @@
                     }
                 }
             }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .footer-position {
+        display: block !important;
+        .bar-hidden {
+            display: none;
         }
     }
 }

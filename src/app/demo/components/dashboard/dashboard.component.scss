@@ -1,10 +1,29 @@
 /* ------------------------------- Global Styles ------------------------------- */
 
+// .about {
+//     section {
+//         text-align: center;
+//         p {
+//             margin: 35rem;
+//             font-size: 1.5rem;
+//         }
+//     }
+// }
 .about {
+    margin: 0rem 3rem 3rem 3rem;
+
+    .logo-about {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        margin-left: 10rem;
+        h1 {
+            font-size: 30rem;
+            color: #fcc11d;
+            text-align: center;
+        }
+    }
     section {
-        text-align: center;
         p {
-            margin: 35rem;
             font-size: 1.5rem;
         }
     }
@@ -146,17 +165,18 @@
 .custom-card-position {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .flex-section {
         width: 30%;
         .card-container {
             margin: 1rem;
             .custom-card {
                 background-color: #1e1e1e;
-                color: #fcc11d;
+
                 padding: 1rem;
                 border-radius: 10px;
                 width: auto;
-                text-align: center;
+                text-align: left;
                 .icon-container {
                     margin-right: 15px; /* espace entre l'icône et le titre */
                 }
@@ -169,9 +189,28 @@
 
 /* Tablet screens (600px to 1024px) */
 @media (max-width: 1024px) and (min-width: 600px) {
+    .custom-card-position {
+        display: block;
+
+        .flex-section {
+            width: 100%;
+            .card-container {
+                .custom-card {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
     .about {
-        .heightIMG {
-            height: 45rem; /* Ajuste la hauteur de l'image pour les tablettes */
+        .logo-about {
+            display: none;
+        }
+        section {
+            p {
+                font-size: 1rem;
+                text-align: justify;
+                hyphens: auto;
+            }
         }
     }
 
@@ -201,13 +240,32 @@
 
 /* Mobile screens (below 600px) */
 @media (max-width: 600px) {
+    .custom-card-position {
+        display: block;
+
+        .flex-section {
+            width: 100%;
+            .card-container {
+                .custom-card {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
     .about {
-        .heightIMG {
-            height: 30rem; /* Réduit la hauteur de l'image sur mobile */
+        .logo-about {
+            display: none;
         }
 
         .mobile-padding {
             padding: 1rem !important;
+        }
+        section {
+            p {
+                font-size: 1rem;
+                text-align: justify;
+                hyphens: auto;
+            }
         }
     }
 
