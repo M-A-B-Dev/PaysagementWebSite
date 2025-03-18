@@ -11,23 +11,33 @@ export class TimelineDemoComponent implements OnInit {
     ngOnInit() {
         this.events1 = [
             {
-                status: 'Solidité et durabilité',
+                status: 'Demande de soumission',
                 icon: '1',
                 color: '#FCC11D',
             },
             {
-                status: 'Respect des normes et standards les plus élevés de l’industrie',
+                status: 'Rencontre primaire',
                 icon: '2',
                 color: '#FCC11D',
             },
             {
-                status: 'Service professionnel et impeccable ',
+                status: 'Création d’un plan et d’une soumission',
                 icon: '3',
                 color: '#FCC11D',
             },
             {
-                status: 'Garanties offertes',
+                status: 'Rencontre secondaire',
                 icon: '4',
+                color: '#FCC11D',
+            },
+            {
+                status: 'Acceptation finale',
+                icon: '5',
+                color: '#FCC11D',
+            },
+            {
+                status: 'Réalisation du projet',
+                icon: '6',
                 color: '#FCC11D',
             },
         ];

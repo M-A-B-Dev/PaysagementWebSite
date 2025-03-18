@@ -1,15 +1,11 @@
 /* ------------------------------- Global Styles ------------------------------- */
 
 .about {
-    margin: 0rem 3rem 3rem 3rem;
-
-    .heightIMG {
-        height: 40rem;
-        /* Taille d'image par défaut */
-    }
     section {
+        text-align: center;
         p {
-            font-size: 1.2rem;
+            margin: 35rem;
+            font-size: 1.5rem;
         }
     }
 }
@@ -142,6 +138,28 @@
 
             .title-section {
                 margin: 0;
+            }
+        }
+    }
+}
+
+.custom-card-position {
+    display: flex;
+    justify-content: center;
+    .flex-section {
+        width: 30%;
+        .card-container {
+            margin: 1rem;
+            .custom-card {
+                background-color: #1e1e1e;
+                color: #fcc11d;
+                padding: 1rem;
+                border-radius: 10px;
+                width: auto;
+                text-align: center;
+                .icon-container {
+                    margin-right: 15px; /* espace entre l'icône et le titre */
+                }
             }
         }
     }
