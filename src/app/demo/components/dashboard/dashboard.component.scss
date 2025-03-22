@@ -1,30 +1,15 @@
 /* ------------------------------- Global Styles ------------------------------- */
 
-// .about {
-//     section {
-//         text-align: center;
-//         p {
-//             margin: 35rem;
-//             font-size: 1.5rem;
-//         }
-//     }
-// }
 .about {
     margin: 0rem 3rem 3rem 3rem;
 
-    .logo-about {
-        background-color: #1e1e1e;
-        border-radius: 10px;
-        margin-left: 10rem;
-        h1 {
-            font-size: 30rem;
-            color: #fcc11d;
-            text-align: center;
-        }
+    .heightIMG {
+        height: 40rem;
+        /* Taille d'image par défaut */
     }
     section {
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -253,19 +238,16 @@
         }
     }
     .about {
-        .logo-about {
-            display: none;
-        }
-
-        .mobile-padding {
-            padding: 1rem !important;
-        }
         section {
             p {
                 font-size: 1rem;
                 text-align: justify;
                 hyphens: auto;
             }
+        }
+
+        .img-container-hidden {
+            display: none;
         }
     }
 
