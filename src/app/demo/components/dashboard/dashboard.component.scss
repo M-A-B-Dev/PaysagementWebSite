@@ -182,20 +182,32 @@
             .card-container {
                 .custom-card {
                     padding: 2rem;
+                    p {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
     }
     .about {
-        .logo-about {
-            display: none;
+        .mobile-padding {
+            padding: 0 !important;
+            margin: 0 auto;
+            width: 80% !important;
         }
         section {
+            h1 {
+                text-align: center;
+            }
             p {
-                font-size: 1rem;
+                font-size: 1.3rem;
                 text-align: justify;
                 hyphens: auto;
             }
+        }
+
+        .img-container-hidden {
+            display: none;
         }
     }
 
@@ -213,12 +225,8 @@
     }
 
     .Welcome {
-        h1 {
-            font-size: 3.5em; /* Réduit la taille du titre pour les tablettes */
-        }
-
         p {
-            font-size: 1.2em; /* Réduit la taille du texte pour les tablettes */
+            font-size: 1.5rem;
         }
     }
 }
