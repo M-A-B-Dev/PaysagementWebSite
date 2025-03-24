@@ -238,6 +238,9 @@
         }
     }
     .about {
+        .mobile-padding {
+            padding: 0 !important;
+        }
         section {
             p {
                 font-size: 1rem;
@@ -253,7 +256,7 @@
 
     .Welcome {
         h1 {
-            font-size: 2rem !important; /* Réduit la taille du titre pour les tablettes */
+            font-size: 2.5rem !important; /* Réduit la taille du titre pour les tablettes */
         }
     }
 
