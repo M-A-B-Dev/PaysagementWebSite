@@ -10,8 +10,7 @@ export class FormLayoutDemoComponent implements OnInit {
     contact: FormGroup = <FormGroup>{};
     visible: boolean = false;
 
-    formActionUrl: string =
-        'https://formsubmit.co/ossamfruoummoul.pro@gmail.com';
+    formActionUrl: string = 'https://formsubmit.co/gestionrobexinc@gmail.com';
 
     constructor(private fb: FormBuilder) {}
 
